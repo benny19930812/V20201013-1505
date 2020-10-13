@@ -35,6 +35,11 @@
         .price2{
         width:200px;
         }
+        #1{
+        float:right;
+        }
+       
+
     </style>
 </head>
 
@@ -42,12 +47,13 @@
 <form name="order2" action="<c:url value='/_04_ST/04_Booking3.jsp'/> " method="get">
 
 <jsp:include page="/fragment/top.jsp" />
+<div class="container">
 <c:set var="name" value="${param.name}" scope="session"/> 
 <c:set var="email" value="${param.email}" scope="session"/> 
 <c:set var="tel" value="${param.tel}" scope="session"/> 
 <c:set var="add" value="${param.add}" scope="session"/> 
     <H1>訂購人資訊</H1>
- <table border="1">
+ <table class= "table table-bordered">
         
         <tr>
             <td>訂購人姓名
@@ -77,8 +83,8 @@
             </td>
         </tr>
      </table><br><br> <br>  
-
-      <table border="1">  
+		<H2>訂購票券</H2>
+      <table class= "table table-bordered">  
         <tr>
             <td class="title">節目名稱</td>
             <td>票種</td>
@@ -133,10 +139,10 @@
 <tr><td>總計</td><td></td><td></td><td></td><td>NT$<input type="text" name="total3" id="total3" class="totalprice"value="${sum}" readonly="readonly" /></td><tr>
 
    </table>     
-          <input type="submit" value="繼續購票" name="1" class="1" id="1">  
+          <input type="submit" value="繼續購票" name="1" class="btn btn-outline-info" id="1">  
     	 </form>
    		<form name="order" action="<c:url value='/_04_ShopCart/ClearCart'/>" method="POST">
-          <input type="submit" value="全部清除" name="clear" class="clear" id="clear"> 
+          <br><input type="submit" value="全部清除" name="clear" class="btn btn-outline-info" id="clear"> 
     	 </form>
 <%--    		<form name="order" action="<c:url value='/_04_ShopCart/Delect'/>" method="POST"> --%>
 <!--           <input type="submit" value="刪除測試" name="clear" class="clear" id="clear">  -->
@@ -146,7 +152,7 @@
 <!--           <input type="submit" value="刪除測試" name="clear" class="clear" id="clear">  -->
 <!--     	 </form> -->
 
-    
+</div>   
 
  <script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>

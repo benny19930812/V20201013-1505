@@ -10,9 +10,15 @@
 <%-- <form name="order" action="<c:url value='/_04_Orderlist/OrIdSearchServlet'/>" method="get" > --%>
 <form name="order" action="./OrIdSearchServlet" method="get" >
 <jsp:include page="/fragment/top.jsp" />
+<div class="container">
+<P><P><P><P>
+<div class="text-center">
+
 請輸入訂單編號
 <input type="text" name="orderid">
-<input type="submit" value="送出查詢" name="submit" class="submit" id="submit">
+<input type="submit" value="送出查詢" name="submit" class="btn btn-outline-info" id="submit">
 </form>
 </body>
+</div>
+</div>
 </html>

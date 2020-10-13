@@ -45,7 +45,7 @@ td {
 
 <body>
 	<jsp:include page="/fragment/top.jsp" />
-
+<div class="container">
 	<form name="order"
 		action="<c:url value='/_04_ShopCart/ShopCartServlet'/>" method="post">
 
@@ -54,12 +54,14 @@ td {
 		<c:set var="actid" value="${param.actid}" />
 		<c:set var="description" value="${param.description}" />
 		<%-- 	<c:set var="actid" value="${param.actid}" scope="session"/> --%>
-		<H1>確認張數</H1>
+		<H1>節目詳細</H1>
 		節目名稱:
 		<P>${title}</P>
 		節目簡介:
-		<P>${description}</P>
-		<table border="1">
+		<P>${description}</P><br><br>
+		
+		<H2>訂購票券</H2>
+		<table class="table table-bordered">
 			<tr>
 				<td class="title">節目名稱</td>
 				<td>票種</td>
@@ -71,10 +73,11 @@ td {
 			<tr>
 				<td class="title">${title}</td>
 				<td>全票</td>
-				<td><input type="button" value="-" name="minus" class="minus"
-					id="minus"> <input type="text" name="adultnum"
-					id="adultnum" class="adultnum" value=""> <input
-					type="button" value="+" name="plus" class="plus" id="plus">
+				<td><input type="button" value="-" name="minus" class=""
+					id="minus"> 
+					<input type="text" name="adultnum"
+					id="adultnum" class="adultnum" value=""> 
+					<input type="button" value="+" name="plus" class="" id="plus">
 				</td>
 
 				<td name="price" class="price" id="price">NT$1000</td>
@@ -85,11 +88,12 @@ td {
 			<tr>
 				<td>${title}</td>
 				<td>半票</td>
-				<td><input type="button" value="-" name="minus2" class="minus2"
+				<td><input type="button" value="-" name="minus2" class=""
 					id="minus2"> <!-- <P name="orderNum" id="orderNum" class="orderNum"></P> -->
 					<input type="text" name="halfnum" id="halfnum" class="halfnum"
-					value=""> <input type="button" value="+" name="plus2"
-					class="plus2" id="plus2"></td>
+					value=""> 
+					<input type="button" value="+" name="plus2"
+					class="" id="plus2"></td>
 				<td name="price" class="price" id="price">NT$500</td>
 				<td>NT$ <input type="text" name="total2" id="total2"
 					class="total2" value="0" readonly="readonly" />
@@ -105,8 +109,9 @@ td {
 			<tr>
 		</table>
 		<br> <input type="submit" value="確認數量" name="submit"
-			class="submit" id="submit">
+			class="btn btn-outline-info" id="submit">
 	</form>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"
 		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
 		crossorigin="anonymous"></script>

@@ -108,7 +108,7 @@ function setFocusToUserId(){
 <body onLoad="setFocusToUserId()" >
 <c:set var="funcName" value="REG" scope="session"/>
 <!-- 引入共同的頁首 -->
-<jsp:include page="/fragment/top.jsp" />
+<%-- <jsp:include page="/fragment/top.jsp" /> --%>
   <div id="content"> 
   <Table style="background-color: #F5F1E3; cellspacing:0;" >
      <TR height="60" >

@@ -8,7 +8,10 @@
 </head>
 <body>
 <jsp:include page="/fragment/top.jsp" />
-訂單已刪除
+<div class="container">
+<br><br>
+<H1 class="text-center">訂單已刪除</H1>
+</div>
 
 </body>
 </html>

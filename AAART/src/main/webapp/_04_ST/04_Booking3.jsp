@@ -36,16 +36,17 @@
 </head>
 
 <body>
-<form name="order2" action="<c:url value='/_04_Orderlist/OrderlistServlet'/> " method="post">
 
-	<jsp:include page="/fragment/top.jsp" />
+<jsp:include page="/fragment/top.jsp" />
+<div class="container">
+<form name="order2" action="<c:url value='/_04_Orderlist/OrderlistServlet'/> " method="post">
 <c:set var="name" value="${param.name}" scope="session"/> 
 <c:set var="email" value="${param.email}" scope="session"/> 
 <c:set var="tel" value="${param.tel}" scope="session"/> 
 <c:set var="add" value="${param.add}" scope="session"/> 
 <c:set var="totalprice" value="${param.total3}" scope="session"/> 
     <H1>確認訂單資訊</H1>
-    <table border="1">
+    <table class= "table table-bordered">
         <tr>
             <td>訂購人姓名
             </td>
@@ -75,7 +76,7 @@
         </tr>
      </table><br><br> <br>  
 
-      <table border="1">  
+      <table class= "table table-bordered">  
         
         <tr>
             <td class="title">節目名稱</td>
@@ -118,10 +119,9 @@
 
     </table><br>
     </form>
-          <input type="button" value="修改訂單" name="" class="" id="" onclick="history.back()">  
-          <input type="submit" value="送出訂單" name="1" class="1" id="1">  
-     
-
+          <input type="button" value="修改訂單" name="" class="btn btn-outline-info" id="" onclick="history.back()">  
+          <input type="submit" value="送出訂單" name="1" class="btn btn-outline-info" id="1">  
+</div>
     
 <!-- <script src="js\jquery-3.5.1.min.js"></script> -->
  <script src="https://code.jquery.com/jquery-3.5.1.js"

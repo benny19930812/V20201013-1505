@@ -8,7 +8,10 @@
 </head>
 <body>
 <jsp:include page="/fragment/top.jsp" />
-訂單已修改
+<div class="container">
+<br><br>
+<H1 class="text-center">訂單已修改</H1>
+</div>
 
 </body>
 </html>

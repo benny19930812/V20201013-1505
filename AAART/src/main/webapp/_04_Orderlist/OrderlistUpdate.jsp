@@ -11,8 +11,10 @@
 <body>
 <form method=GET action="<c:url value='/_04_Orderlist/OrderlistUpdate'/>"> 
 	<jsp:include page="/fragment/top.jsp" />
-<table border="1">
- <tr>
+<div class="container">
+<p></p>
+<table class="table table-bordered">
+<tr>
             <td>訂單編號
             </td>
             <td>${orderid}</td>
@@ -46,8 +48,9 @@
         </tr>
 </table>
 
- <input type="submit" value="送出修改" name="1" class="1" id="1">  
+ <input type="submit" value="送出修改" name="1" class="btn btn-outline-info" id="1">  
 </form>
+</div>
  <script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </script>

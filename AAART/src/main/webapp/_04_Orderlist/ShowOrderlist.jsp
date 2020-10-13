@@ -15,13 +15,13 @@
 		<%--使用JSTL 執行for loop ${show.no}取map內value --%>
 
 
-		<table border="1">
-			<tr>
+		<table class="table table-bordered">
+			<br><br><tr>
 				<th>訂單編號</th>
-				<th>名字</th>
-				<th>email</th>
-				<th>tel</th>
-				<th>地址</th>
+				<th>訂購人姓名</th>
+				<th>E-mail</th>
+				<th>連絡電話</th>
+				<th>通訊地址</th>
 				<th>總金額</th>
 
 			</tr>
@@ -37,7 +37,7 @@
 
 			</c:forEach>
 			</table><br><br>
-		<table border="1">
+		<table class="table table-bordered">
 			<tr>
             <td>節目名稱</td>
             <td>票種</td>
@@ -66,9 +66,9 @@
 
 		</table>
 	</form>	
-	 <input type="submit" value="修改訂單" name="submit" class="submit" id="update"  >
+	 <input type="submit" value="修改訂單" name="submit" class="btn btn-outline-info" id="update"  >
 	 
-	  <input type="submit" value="刪除訂單" name="submit" class="submit" id="delete"  >
+	  <input type="submit" value="刪除訂單" name="submit" class="btn btn-outline-info" id="delete"  >
 <%-- 	 <form name="order" action="<c:url value='/_04_Orderlist/OrIdDeleteServlet'/> " method="get"> --%>
 <!-- 	  </form> -->
  <script src="https://code.jquery.com/jquery-3.5.1.js"
